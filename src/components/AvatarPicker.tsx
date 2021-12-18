@@ -2,10 +2,10 @@ import React, { useRef, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
 export default function AvatarPicker({}) {
-  const inputRef = useRef();
-  const [image, setImage] = useState({});
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [image, setImage] = useState<{ url: string | null }>({ url: null });
 
-  const selectImage = (e) => {
+  const selectImage = () => {
     if (inputRef.current) {
       inputRef.current.click();
     }
@@ -21,8 +21,8 @@ export default function AvatarPicker({}) {
 
   const clearImage = () => {
     if (inputRef.current) {
-      inputRef.current.value = null;
-      setImage({});
+      inputRef.current.value = "";
+      setImage({ url: null });
     }
   };
 

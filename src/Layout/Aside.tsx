@@ -9,8 +9,18 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
+import { Component } from "../App";
+interface AsideInterface {
+  toggled: boolean;
+  setToggled: any;
+  components: Array<Component>;
+}
 
-export default function Aside({ toggled, setToggled, components }) {
+export default function Aside({
+  toggled,
+  setToggled,
+  components,
+}: AsideInterface) {
   return (
     <ProSidebar breakPoint="lg" toggled={toggled} onToggle={setToggled}>
       <Menu iconShape="square">

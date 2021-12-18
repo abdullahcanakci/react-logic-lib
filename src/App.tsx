@@ -2,8 +2,16 @@ import { lazy, useMemo } from "react";
 import "react-pro-sidebar/dist/css/styles.css";
 import Layout from "./Layout/Layout";
 
+interface Component {
+  title: string;
+  path: string;
+  index?: boolean;
+  element: any;
+}
+export type { Component };
+
 function App() {
-  const components = useMemo(() => {
+  const components: Array<Component> = useMemo(() => {
     return [
       {
         title: "Index",

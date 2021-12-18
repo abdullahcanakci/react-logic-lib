@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Route, Routes } from "react-router-dom";
+import { Component } from "../App";
 import Aside from "./Aside";
 
-export default function Layout({ children, components }) {
+export default function Layout({
+  components,
+}: {
+  components: Array<Component>;
+}) {
   const [toggled, setToggled] = useState(false);
 
   return (
