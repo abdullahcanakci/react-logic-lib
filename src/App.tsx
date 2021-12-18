@@ -24,6 +24,11 @@ function App() {
         path: "/avatar-picker",
         element: lazy(() => import("./components/AvatarPicker")),
       },
+      {
+        title: "Bar Chart",
+        path: "/bar-chart",
+        element: lazy(() => import("./components/BarChart")),
+      },
     ];
   }, []);
 
