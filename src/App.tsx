@@ -29,6 +29,11 @@ function App() {
         path: "/bar-chart",
         element: lazy(() => import("./components/BarChart")),
       },
+      {
+        title: "Stepper",
+        path: "/stepper",
+        element: lazy(() => import("./components/Stepper")),
+      },
     ];
   }, []);
 
