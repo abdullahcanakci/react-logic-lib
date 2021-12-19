@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useContext } from "react";
-import { FaCaretDown, FaChevronDown } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { AccordionContext } from "./Accordion";
 
 interface Props {

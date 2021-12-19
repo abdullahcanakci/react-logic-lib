@@ -24,7 +24,7 @@ export default function Accordion({
   const [state, setState] = useState<number[]>([]);
 
   const togglePane = (pane: number) => {
-    if (!pane) return;
+    if (pane == null) return;
     setState((panes) => {
       const paneIndex = panes.indexOf(pane);
 
