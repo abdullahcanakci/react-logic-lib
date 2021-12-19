@@ -34,6 +34,11 @@ function App() {
         path: "/stepper",
         element: lazy(() => import("./components/Stepper")),
       },
+      {
+        title: "Accordion",
+        path: "/accordion",
+        element: lazy(() => import("./components/Accordion")),
+      },
     ];
   }, []);
 
