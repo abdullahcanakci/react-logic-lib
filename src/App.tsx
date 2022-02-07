@@ -39,6 +39,11 @@ function App() {
         path: "/accordion",
         element: lazy(() => import("./components/Accordion")),
       },
+      {
+        title: "Cart",
+        path: "/cart",
+        element: lazy(() => import("./components/Cart")),
+      },
     ];
   }, []);
 
